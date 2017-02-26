@@ -8,7 +8,7 @@ public class ForExam {
 //				continue; // 반복문 실행부분 실행시키지 않고 바로 다음 실행해야하는 i++로 올라간다. 
 //			}
 			if(i == 50){
-				break;
+				break; // 만난지점에서 반복문을 빠져나온다. 
 			}
 			total += i;
 			System.out.println(total);
