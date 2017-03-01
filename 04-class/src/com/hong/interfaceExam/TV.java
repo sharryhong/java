@@ -10,4 +10,13 @@ public interface TV {
 	public void trunOff();
 	public void changeVolume(int volume);
 	public void changeChannel(int channel);
+	
+//	JAVA8에서 추가된 인터페이스의 default, static 메소드
+	default void channel(){ // 구현가능
+		System.out.println("기본채널");
+	}
+	
+	public static void showVod(){ // 구현가능
+		System.out.println("Vod로 바로가기");
+	}
 }
