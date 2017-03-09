@@ -1,13 +1,13 @@
 package javaUtill.exam;
 
-public class Box {
-	private Object obj; 
+public class Box<E> { // Generic 사용을 위해. 가상클래스 E 
+	private E obj; // Object형으로 선언했던 부분을 E로 바꾼다. 
 	
-	public void setObj(Object obj){ // Object타입의 자식들도 모두 들어올 수 있다. 
+	public void setObj(E obj){  
 		this.obj = obj;
 	}
 	
-	public Object getObj(){ // Object타입만 리턴됨 
+	public E getObj(){ 
 		return obj;
 	}
 }
